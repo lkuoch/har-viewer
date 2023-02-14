@@ -25,6 +25,11 @@
 
 <template>
   <div class="tab-content overflow-text">
+    <section>
+      <h1>Content</h1>
+      <pre><code v-text="data.timings" /></pre>
+    </section>
+
     <div
       v-if="data.time"
       class="timing"

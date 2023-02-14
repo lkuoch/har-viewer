@@ -74,7 +74,7 @@ export const viewerTabs = [
   },
   {
     name: "responseContent",
-    displayName: "Response Content",
+    displayName: "Raw",
   },
   {
     name: "websocket",

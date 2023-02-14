@@ -31,23 +31,7 @@
       <h1>Type</h1>
       <span v-text="data.request.postData.mimeType" />
     </section>
-    <section v-if="data.request.postData.params.length !== 0">
-      <h1>Parameters</h1>
-      <ul>
-        <li
-          v-for="p in data.request.postData.params"
-          :key="p.name"
-        >
-          <template v-if="p.value">
-            <b>{{ p.name }}</b>: {{ p.value }}
-          </template>
-          <template v-else>
-            <b>{{ p.name }}</b>
-          </template>
-        </li>
-      </ul>
-    </section>
-    <section v-else>
+    <section>
       <h1>Content</h1>
       <pre><code v-text="content" /></pre>
     </section>
